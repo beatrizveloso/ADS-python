@@ -1,1 +1,87 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyM2522HJX8dH9/Zppirlp1k"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"markdown","source":["Calcule e exiba a conversão deste número para a base 2;"],"metadata":{"id":"FvKpc6X__Amz"}},{"cell_type":"code","source":["numero = int(input(\"Digite um número inteiro na base 10: \"))\n","\n","# Verificando se o número é negativo\n","sinal = 1\n","if numero < 0:\n","    sinal = -1\n","    numero = -numero\n","\n","# Lidando com o caso especial de zero\n","if numero == 0:\n","    resultado_base2 = '0'\n","else:\n","    resultado_base2 = ''\n","\n","# Calculando a conversão para a base 2\n","while numero != 0:\n","    resultado_base2 = str(numero % 2) + resultado_base2\n","    numero //= 2\n","\n","# Adicionando o sinal de negativo, se necessário\n","if sinal == -1:\n","    resultado_base2 = '-' + resultado_base2\n","\n","print(\"O número na base 2 é:\", resultado_base2)"],"metadata":{"id":"XFa6dt1Z_InG","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1715271825896,"user_tz":180,"elapsed":92767,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"48a498b6-82d9-46b4-ede7-a4691e1cb1b5"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número inteiro na base 10: 100\n","O número na base 2 é: 1100100\n"]}]},{"cell_type":"markdown","source":["Calcule e exiba a conversão deste número para a base 8;"],"metadata":{"id":"XUagJO_l_DFk"}},{"cell_type":"code","source":["numero = int(input(\"Digite um número inteiro na base 10: \"))\n","\n","# Verificando se o número é negativo\n","sinal = 1\n","if numero < 0:\n","    sinal = -1\n","    numero = -numero\n","\n","# Lidando com o caso especial de zero\n","if numero == 0:\n","    resultado_base8 = '0'\n","else:\n","    resultado_base8 = ''\n","\n","# Calculando a conversão para a base 8\n","while numero != 0:\n","    resultado_base8 = str(numero % 8) + resultado_base8\n","    numero //= 8\n","\n","# Adicionando o sinal de negativo, se necessário\n","if sinal == -1:\n","    resultado_base8 = '-' + resultado_base8\n","\n","print(\"O número na base 8 é:\", resultado_base8)"],"metadata":{"id":"xhq_ksdJ_I_d","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1715272459684,"user_tz":180,"elapsed":3969,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"0d2e1b34-bb63-4b47-e553-148dddf97df0"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número inteiro na base 10: 100\n","O número na base 8 é: 144\n"]}]},{"cell_type":"markdown","source":["Calcule e exiba a conversão deste número para a base 16;"],"metadata":{"id":"3twqQ1lf_Ems"}},{"cell_type":"code","source":["numero = int(input(\"Digite um número inteiro na base 10: \"))\n","\n","# Verificando se o número é negativo\n","sinal = 1\n","if numero < 0:\n","    sinal = -1\n","    numero = -numero\n","\n","# Lidando com o caso especial de zero\n","if numero == 0:\n","    resultado_base16 = '0'\n","else:\n","    resultado_base16 = ''\n","\n","# Calculando a conversão para a base 16\n","while numero != 0:\n","    resultado_base16 = str(numero % 16) + resultado_base16\n","    numero //= 16\n","\n","# Adicionando o sinal de negativo, se necessário\n","if sinal == -1:\n","    resultado_base16 = '-' + resultado_base16\n","\n","print(\"O número na base 8 é:\", resultado_base16)"],"metadata":{"id":"LQF4dpXY-52b","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1715272450534,"user_tz":180,"elapsed":5039,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"71c4bfe1-440f-42b6-b76c-21307d49e47b"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número inteiro na base 10: 100\n","O número na base 8 é: 64\n"]}]}]}
+# Calcule e exiba a conversão deste número para a base 2;
+
+numero = int(input("Digite um número inteiro na base 10: "))
+
+# Verificando se o número é negativo
+sinal = 1
+if numero < 0:
+    sinal = -1
+    numero = -numero
+
+# Lidando com o caso especial de zero
+if numero == 0:
+    resultado_base2 = '0'
+else:
+    resultado_base2 = ''
+
+# Calculando a conversão para a base 2
+while numero != 0:
+    resultado_base2 = str(numero % 2) + resultado_base2
+    numero //= 2
+
+# Adicionando o sinal de negativo, se necessário
+if sinal == -1:
+    resultado_base2 = '-' + resultado_base2
+
+print("O número na base 2 é:", resultado_base2)
+
+
+# Calcule e exiba a conversão deste número para a base 8;
+
+numero = int(input("Digite um número inteiro na base 10: "))
+
+# Verificando se o número é negativo
+sinal = 1
+if numero < 0:
+    sinal = -1
+    numero = -numero
+
+# Lidando com o caso especial de zero
+if numero == 0:
+    resultado_base8 = '0'
+else:
+    resultado_base8 = ''
+
+# Calculando a conversão para a base 8
+while numero != 0:
+    resultado_base8 = str(numero % 8) + resultado_base8
+    numero //= 8
+
+# Adicionando o sinal de negativo, se necessário
+if sinal == -1:
+    resultado_base8 = '-' + resultado_base8
+
+print("O número na base 8 é:", resultado_base8)
+
+
+# Calcule e exiba a conversão deste número para a base 16;
+
+numero = int(input("Digite um número inteiro na base 10: "))
+
+# Verificando se o número é negativo
+sinal = 1
+if numero < 0:
+    sinal = -1
+    numero = -numero
+
+# Lidando com o caso especial de zero
+if numero == 0:
+    resultado_base16 = '0'
+else:
+    resultado_base16 = ''
+
+# Calculando a conversão para a base 16
+while numero != 0:
+    resultado_base16 = str(numero % 16) + resultado_base16
+    numero //= 16
+
+# Adicionando o sinal de negativo, se necessário
+if sinal == -1:
+    resultado_base16 = '-' + resultado_base16
+
+print("O número na base 8 é:", resultado_base16)
+
+
+
+
+

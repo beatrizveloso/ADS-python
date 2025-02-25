@@ -1,1 +1,153 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyPvHnXGnsMzLmGuMEK47LTs"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"markdown","source":["1- Desenvolva um programa em Python que solicite ao usuário os valores dos lados de um retângulo. A seguir, calcule e mostre os valores de seu perímetro e de sua área."],"metadata":{"id":"3CjyLSzxz1Ft"}},{"cell_type":"code","source":["lado1 = float(input(\"Digite o valor do lado A do retângulo: \"))\n","lado2 = float(input(\"Digite o valor do lado B do retângulo: \"))\n","perimetro = 2 * (lado1 + lado2)\n","area = lado1 * lado2\n","print(\"O perímetro do retângulo é:\", perimetro)\n","print(\"A área do retângulo é:\", area)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"4ellikKQzjv0","executionInfo":{"status":"ok","timestamp":1710941692918,"user_tz":180,"elapsed":4616,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"fe40acaf-5bd4-4732-fe46-a3db86d568b3"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o valor do lado A do retângulo: 5\n","Digite o valor do lado B do retângulo: 10\n","O perímetro do retângulo é: 30.0\n","A área do retângulo é: 50.0\n"]}]},{"cell_type":"markdown","source":["2- Escreva um programa em Python que solicite ao usuário o salário atual e mostre o salário acrescido de 5% comissão.\n"],"metadata":{"id":"fg2vNBjP7ksJ"}},{"cell_type":"code","source":["salarioatual = float(input(\"Digite o salário atual: \"))\n","salariocomcomissao = salarioatual * 1.05\n","print(\"O salário com acréscimo de 5% de comissão é:\", salariocomcomissao)"],"metadata":{"id":"yjd4whBD7j2a","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710941850476,"user_tz":180,"elapsed":10135,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"c482b2df-b787-4d2e-ade1-9a79bab9e908"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o salário atual: 1.400\n","O salário com acréscimo de 5% de comissão é: 1.47\n"]}]},{"cell_type":"markdown","source":["3- Escreva um programa em Python que solicite ao usuário a distância entre duas cidades e o tempo de viagem. O programa deverá calcular e exibir a velocidade média de um carro que vai de uma cidade para outra. Lembre-se de que: v com m subscrito igual a numerador d i s t â n c i a sobre denominador t e m p o fim da fração\n"],"metadata":{"id":"pa_E3Qey8BlJ"}},{"cell_type":"code","source":["distancia = float(input(\"Digite a distância entre as cidades (em quilômetros): \"))\n","tempo = float(input(\"Digite o tempo de viagem (em horas): \"))\n","velocidademedia = distancia / tempo\n","print(\"A velocidade média do carro é:\", velocidademedia, \"km/h\")"],"metadata":{"id":"4rV7e4ag7nUL","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710941926247,"user_tz":180,"elapsed":20234,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"0a6a251d-86c7-425f-a24b-c2ad430dca65"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a distância entre as cidades (em quilômetros): 4\n","Digite o tempo de viagem (em horas): 6\n","A velocidade média do carro é: 0.6666666666666666 km/h\n"]}]},{"cell_type":"markdown","source":["4- Escreva um programa em Python que calcule as duas raízes de uma equação de 2º grau ax²+bx+c, recebendo os valores dos coeficientes da mesma (a, b, c). Suponha que as raízes são reais. Lebre-se de que para calcular as duas raízes usamos a Fórmula de Báskara: x com 1 vírgula 2 subscrito fim do subscrito igual a numerador menos b mais ou menos raiz quadrada de incremento sobre denominador 2 a fim da fração com incremento igual a b ao quadrado menos 4 a c"],"metadata":{"id":"BORb715y8EoZ"}},{"cell_type":"code","source":["import math\n","\n","a = float(input(\"Digite o valor de a: \"))\n","b = float(input(\"Digite o valor de b: \"))\n","c = float(input(\"Digite o valor de c: \"))\n","\n","delta = b**2 - 4*a*c\n","\n","raiz1 = (-b + math.sqrt(delta)) / (2*a)\n","raiz2 = (-b - math.sqrt(delta)) / (2*a)\n","\n","print(\"As raízes da equação são:\", raiz1, \"e\", raiz2)"],"metadata":{"id":"8NyOtkBFDYkJ","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710942491898,"user_tz":180,"elapsed":13556,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"00eee034-93ba-40a7-d4e8-4d8425544852"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o valor de a: 1\n","Digite o valor de b: 12\n","Digite o valor de c: -13\n","As raízes da equação são: 1.0 e -13.0\n"]}]},{"cell_type":"markdown","source":["5- Escreva um programa em Python que leia a cotação do dólar (taxa de conversão), leia um valor em dólares e converta e mostre o valor equivalente em Reais."],"metadata":{"id":"oV2uWRlK72O5"}},{"cell_type":"code","source":["cotacaodolar = float(input(\"Digite a cotação do dólar (em reais): \"))\n","\n","valordolar = float(input(\"Digite o valor em dólares: \"))\n","\n","valorreais = valordolar * cotacaodolar\n","\n","print(\"O valor equivalente em reais é:\", valorreais, \"R$\")"],"metadata":{"id":"I8MdmETV7vAi","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710941618850,"user_tz":180,"elapsed":11607,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"ea0bf881-2bb2-464f-bbea-1fd15afb648f"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a cotação do dólar (em reais): 5.03\n","Digite o valor em dólares: 200\n","O valor equivalente em reais é: 1006.0 R$\n"]}]},{"cell_type":"markdown","source":["6- Escreva um programa em Python que leia um valor representando o gasto realizado por um cliente do restaurante Coma Bem e visualize o valor total a ser pago, considerando os 10% do garçom."],"metadata":{"id":"o8gaGlPTAgSx"}},{"cell_type":"code","source":["valorgasto = float(input(\"Digite o valor do gasto realizado: \"))\n","\n","taxagarcom = valorgasto * 0.10\n","\n","totalapagar = valorgasto + taxagarcom\n","\n","print(\"O valor total a ser pago, incluindo os 10% do garçom, é:\", totalapagar)"],"metadata":{"id":"chIyt92fAgBp","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710942239591,"user_tz":180,"elapsed":8138,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"2e7cb4b7-ec47-47e3-9be5-189694190482"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o valor do gasto realizado: 23\n","O valor total a ser pago, incluindo os 10% do garçom, é: 25.3\n"]}]},{"cell_type":"markdown","source":["7- Escreva um programa em Python que obtenha uma temperatura em graus Celsius, calcule e mostre a respectiva temperatura nas escalas Fahrenheit e Kelvin. Utilize as fórmulas abaixo:"],"metadata":{"id":"v0DOa-sOAoky"}},{"cell_type":"code","source":["celsius = float(input(\"Digite a temperatura em graus Celsius: \"))\n","\n","fahrenheit = (celsius * 9/5) + 32\n","\n","kelvin = celsius + 273.15\n","\n","print(\"A temperatura em Fahrenheit é:\", fahrenheit, \"°F\")\n","print(\"A temperatura em Kelvin é:\", kelvin, \"K\")"],"metadata":{"id":"XeoQtYvSAoQq","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1710942183338,"user_tz":180,"elapsed":67696,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"2afe8f4a-60b5-44d9-981e-b78878b3ed82"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a temperatura em graus Celsius: 20\n","A temperatura em Fahrenheit é: 68.0 °F\n","A temperatura em Kelvin é: 293.15 K\n"]}]},{"cell_type":"markdown","source":["Exercício 1:  Faça um programa em Python que calcule e mostre o valor do volume do tronco de uma pirâmide, para isso o programa deve solicitar ao usuário os valores da altura do tronco da pirâmide (h), o valor da base menor (Bmenor) e o da base maior (Bmaior) e calcular a seguinte expressão:\n","\n","volume =h/3*(Bmaior**2 + Bmenor**2 + (Bmaior**2 * Bmenor**2)**0.5)\n","\n"],"metadata":{"id":"mfFAxLIpkMEo"}},{"cell_type":"code","source":["h = float(input(\"Digite a altura do tronco da pirâmide: \"))\n","\n","bmenor = float(input(\"Digite o valor da base menor da pirâmide: \"))\n","\n","bmaior = float(input(\"Digite o valor da base maior da pirâmide: \"))\n","\n","volume = h/3 * (bmaior*2 + bmenor*2 + (bmaior*2 * bmenor*2)*0.5)\n","\n","print(f\"O volume do tronco da pirâmide é: {volume:.2f}\")"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"JIJteHhdkQ3g","executionInfo":{"status":"ok","timestamp":1711572294683,"user_tz":180,"elapsed":11244,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"38a7ef2e-339d-420a-ec90-967c7754758e"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a altura do tronco da pirâmide: 11\n","Digite o valor da base menor da pirâmide: 8\n","Digite o valor da base maior da pirâmide: 12\n","O volume do tronco da pirâmide é: 850.67\n"]}]},{"cell_type":"markdown","source":["Exercício 2:  Crie um programa em Python que solicite o valor em horas para o usuário, calcule e mostre o valor em minutos, sabendo que 1 hora tem 60 minutos.\n","\n"],"metadata":{"id":"c6jNU9x-kRY3"}},{"cell_type":"code","source":["import math\n","\n","horas = int(input(\"Digite o valor em horas: \"))\n","\n","min = 60*horas\n","\n","print(f\"{horas} horas equivale a {min} minutos.\")"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"lkCqyhuQkSNC","executionInfo":{"status":"ok","timestamp":1711571095498,"user_tz":180,"elapsed":7410,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"d43f5791-6508-407c-e46d-1c497a78ba87"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o valor em horas: 40\n","40 horas equivale a 2400 minutos.\n"]}]},{"cell_type":"markdown","source":["Exercício 3:  Crie um programa em Python que solicite ao usuário a sua idade expressa em anos, meses e dias (variáveis separadas). Calcule e mostre a idade expressa apenas em dias. Para isso considere 1 ano = 365 dias, 1 mês = 30 dias."],"metadata":{"id":"9bGzeIvjkSsu"}},{"cell_type":"code","source":["import math\n","\n","a = int(input(\"Digite a quantidade de anos: \"))\n","\n","m = int(input(\"Digite a quantidade de meses: \"))\n","\n","d = int(input(\"Digite a quantidade de dias: \"))\n","\n","d1 = a*365\n","\n","d2 = m*30\n","\n","s = d+d1+d2\n","\n","print(f\"Você possui um total de {s} dias.\")\n","\n"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"vrTh9n4IkXNW","executionInfo":{"status":"ok","timestamp":1711571011126,"user_tz":180,"elapsed":175405,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"5e850814-3f73-4c87-b82d-5f14506b7e13"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a quantidade de anos que você tem: 17\n","Digite a quantidade de meses além dos anos: 9\n","Digite a quantidade de dias além de meses e anos: 11\n","Você possui um total de 6486 dias.\n"]}]},{"cell_type":"markdown","source":["Exercício 4:  Escreva um programa em Python para calcular o valor de uma prestação em atraso (prestacao). Para isso, obtenha o valor da prestação (valorPrestacao), a porcentagem de multa pelo atraso (multa) e a quantidade de dias de atraso (qtdeDias). Calcular e mostrar o valor da prestação atualizado, sabendo que:\n","\n","prestacao=valorPrestacao+(valorPrestacao*(multa/100)*qtdeDias)\n","\n"],"metadata":{"id":"WvSkm3BxkWk0"}},{"cell_type":"code","source":["valorPrestacao = int(input(\"Digite o valor da prestação: \"))\n","\n","multa = int(input(\"Digite o valor da multa a ser cobrada: \"))\n","\n","dias = int(input(\"Digite a quantidade de dias de atraso: \"))\n","\n","prestacao = valorPrestacao + (valorPrestacao * (multa/100) * dias)\n","\n","print(f\"Nossa nova prestação deverá ser de {prestacao} reais.\")"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"VwxLMVQekXwS","executionInfo":{"status":"ok","timestamp":1711571088104,"user_tz":180,"elapsed":25255,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"53c09f8a-750e-4ec2-8ee5-a1b46fe50180"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite o valor da prestação: 250\n","Digite o valor da multa a ser cobrada: 150\n","Digite a quantidade de dias de atraso: 5\n","Nossa nova prestação deverá ser de 2125.0 reais.\n"]}]},{"cell_type":"markdown","source":["Exercício 5:  Faça uma programa em Python que peça do usuário um valor em graus para um ângulo. Converta-o para radianos e, usando funções da biblioteca math, imprima o seno, cosseno e tangente deste ângulo."],"metadata":{"id":"CznAaCJZkYg3"}},{"cell_type":"code","source":["import math\n","\n","graus = float(input(\"Valor em graus: \"))\n","\n","r = math.radians(graus)\n","\n","s = math.sin(r)\n","\n","c = math.cos(r)\n","\n","t = math.tan(r)\n","\n","print(f\"Para o ângulo {graus}°:\")\n","\n","print(f\"O seno é {s}.\")\n","\n","print(f\"O cosseno é {c}.\")\n","\n","print(f\"A tangente é {t}.\")\n","\n"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"dyNdfBgnkaX6","executionInfo":{"status":"ok","timestamp":1711571062865,"user_tz":180,"elapsed":51790,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"dbc31aad-19ad-4e65-ec66-7065e976e1bf"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Valor em graus: 54\n","Para o ângulo 54.0°:\n","O seno é 0.8090169943749475.\n","O cosseno é 0.5877852522924731.\n","A tangente é 1.3763819204711734.\n"]}]}]}
+# 1- Desenvolva um programa em Python que solicite ao usuário os valores dos lados de um retângulo. A seguir, calcule e mostre os valores de seu perímetro e de sua área.
+
+lado1 = float(input("Digite o valor do lado A do retângulo: "))
+lado2 = float(input("Digite o valor do lado B do retângulo: "))
+perimetro = 2 * (lado1 + lado2)
+area = lado1 * lado2
+print("O perímetro do retângulo é:", perimetro)
+print("A área do retângulo é:", area)
+
+# 2- Escreva um programa em Python que solicite ao usuário o salário atual e mostre o salário acrescido de 5% comissão.
+
+salarioatual = float(input("Digite o salário atual: "))
+salariocomcomissao = salarioatual * 1.05
+print("O salário com acréscimo de 5% de comissão é:", salariocomcomissao)
+
+# 3- Escreva um programa em Python que solicite ao usuário a distância entre duas cidades e o tempo de viagem. O programa deverá calcular e exibir a velocidade média de um carro que vai de uma cidade para outra. Lembre-se de que: v com m subscrito igual a numerador d i s t â n c i a sobre denominador t e m p o fim da fração
+
+distancia = float(input("Digite a distância entre as cidades (em quilômetros): "))
+tempo = float(input("Digite o tempo de viagem (em horas): "))
+velocidademedia = distancia / tempo
+print("A velocidade média do carro é:", velocidademedia, "km/h")
+
+# 4- Escreva um programa em Python que calcule as duas raízes de uma equação de 2º grau ax²+bx+c, recebendo os valores dos coeficientes da mesma (a, b, c). Suponha que as raízes são reais. Lebre-se de que para calcular as duas raízes usamos a Fórmula de Báskara: x com 1 vírgula 2 subscrito fim do subscrito igual a numerador menos b mais ou menos raiz quadrada de incremento sobre denominador 2 a fim da fração com incremento igual a b ao quadrado menos 4 a c
+
+import math
+
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+delta = b**2 - 4*a*c
+
+raiz1 = (-b + math.sqrt(delta)) / (2*a)
+raiz2 = (-b - math.sqrt(delta)) / (2*a)
+
+print("As raízes da equação são:", raiz1, "e", raiz2)
+
+# 5- Escreva um programa em Python que leia a cotação do dólar (taxa de conversão), leia um valor em dólares e converta e mostre o valor equivalente em Reais.
+
+cotacaodolar = float(input("Digite a cotação do dólar (em reais): "))
+
+valordolar = float(input("Digite o valor em dólares: "))
+
+valorreais = valordolar * cotacaodolar
+
+print("O valor equivalente em reais é:", valorreais, "R$")
+
+# 6- Escreva um programa em Python que leia um valor representando o gasto realizado por um cliente do restaurante Coma Bem e visualize o valor total a ser pago, considerando os 10% do garçom.
+
+valorgasto = float(input("Digite o valor do gasto realizado: "))
+
+taxagarcom = valorgasto * 0.10
+
+totalapagar = valorgasto + taxagarcom
+
+print("O valor total a ser pago, incluindo os 10% do garçom, é:", totalapagar)
+
+# 7- Escreva um programa em Python que obtenha uma temperatura em graus Celsius, calcule e mostre a respectiva temperatura nas escalas Fahrenheit e Kelvin. Utilize as fórmulas abaixo:
+
+celsius = float(input("Digite a temperatura em graus Celsius: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+kelvin = celsius + 273.15
+
+print("A temperatura em Fahrenheit é:", fahrenheit, "°F")
+print("A temperatura em Kelvin é:", kelvin, "K")
+
+# Exercício 1:  Faça um programa em Python que calcule e mostre o valor do volume do tronco de uma pirâmide, para isso o programa deve solicitar ao usuário os valores da altura do tronco da pirâmide (h), o valor da base menor (Bmenor) e o da base maior (Bmaior) e calcular a seguinte expressão: volume =h/3*(Bmaior**2 + Bmenor**2 + (Bmaior**2 * Bmenor**2)**0.5)
+
+h = float(input("Digite a altura do tronco da pirâmide: "))
+
+bmenor = float(input("Digite o valor da base menor da pirâmide: "))
+
+bmaior = float(input("Digite o valor da base maior da pirâmide: "))
+
+volume = h/3 * (bmaior*2 + bmenor*2 + (bmaior*2 * bmenor*2)*0.5)
+
+print(f"O volume do tronco da pirâmide é: {volume:.2f}")
+
+# Exercício 2:  Crie um programa em Python que solicite o valor em horas para o usuário, calcule e mostre o valor em minutos, sabendo que 1 hora tem 60 minutos.
+
+import math
+
+horas = int(input("Digite o valor em horas: "))
+
+min = 60*horas
+
+print(f"{horas} horas equivale a {min} minutos.")
+
+# Exercício 3:  Crie um programa em Python que solicite ao usuário a sua idade expressa em anos, meses e dias (variáveis separadas). Calcule e mostre a idade expressa apenas em dias. Para isso considere 1 ano = 365 dias, 1 mês = 30 dias.
+
+import math
+
+a = int(input("Digite a quantidade de anos: "))
+
+m = int(input("Digite a quantidade de meses: "))
+
+d = int(input("Digite a quantidade de dias: "))
+
+d1 = a*365
+
+d2 = m*30
+
+s = d+d1+d2
+
+print(f"Você possui um total de {s} dias.")
+
+# Exercício 4:  Escreva um programa em Python para calcular o valor de uma prestação em atraso (prestacao). Para isso, obtenha o valor da prestação (valorPrestacao), a porcentagem de multa pelo atraso (multa) e a quantidade de dias de atraso (qtdeDias). Calcular e mostrar o valor da prestação atualizado, sabendo que: prestacao=valorPrestacao+(valorPrestacao*(multa/100)*qtdeDias)
+
+valorPrestacao = int(input("Digite o valor da prestação: "))
+
+multa = int(input("Digite o valor da multa a ser cobrada: "))
+
+dias = int(input("Digite a quantidade de dias de atraso: "))
+
+prestacao = valorPrestacao + (valorPrestacao * (multa/100) * dias)
+
+print(f"Nossa nova prestação deverá ser de {prestacao} reais.")
+
+# Exercício 5:  Faça uma programa em Python que peça do usuário um valor em graus para um ângulo. Converta-o para radianos e, usando funções da biblioteca math, imprima o seno, cosseno e tangente deste ângulo
+
+import math
+
+graus = float(input("Valor em graus: "))
+
+r = math.radians(graus)
+
+s = math.sin(r)
+
+c = math.cos(r)
+
+t = math.tan(r)
+
+print(f"Para o ângulo {graus}°:")
+
+print(f"O seno é {s}.")
+
+print(f"O cosseno é {c}.")
+
+print(f"A tangente é {t}.")
+
+
+
+
+
+
+
+
+
+
+
+

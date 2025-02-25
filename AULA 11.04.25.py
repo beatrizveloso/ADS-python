@@ -1,1 +1,57 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyPOCVF2HDQwkAGrFRMN05tr"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"markdown","source":["Faça um programa em Python que solicite um número binário, faça a conversão e exiba o número digitado na base decimal"],"metadata":{"id":"0GMVstBl2P0j"}},{"cell_type":"code","execution_count":null,"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"88ZfxOKv2L9M","executionInfo":{"status":"ok","timestamp":1712836943343,"user_tz":180,"elapsed":4889,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"0d47d918-f35c-4dd1-fc19-de591653da81"},"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número binário: 10101\n","A conversão do binário 10101 para decimal e 21.\n"]}],"source":["binario = input(\"Digite um número binário: \")\n","potencia = len(binario) - 1\n","decimal = 0\n","for digito in binario:\n","  decimal = decimal + int(digito) * 2 ** potencia\n","  potencia = potencia - 1\n","print(\"A conversão do binário %s para decimal e %d.\" % (binario, decimal))"]},{"cell_type":"markdown","source":["Faça um algoritmo que calcula e mostra a média entre duas notas de 10 alunos"],"metadata":{"id":"novMw5emFLHq"}},{"cell_type":"code","source":["contador = 1\n","while contador <= 10:\n","  nota1= float(input(\"Digite a primeira nota do aluno %d: \" % contador))\n","  nota2= float(input(\"Digite a segunda nota do aluno %d: \" % contador))\n","  media = (nota1 + nota2) / 2\n","  print(\"A média do aluno é %d é %.1f.\" % (contador, media))\n","  contador += 1"],"metadata":{"id":"dbim65jsFKfK","colab":{"base_uri":"https://localhost:8080/"},"executionInfo":{"status":"ok","timestamp":1712838962437,"user_tz":180,"elapsed":102484,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"53a0cbac-1d7f-4ecd-d2eb-22194b6f6d3b"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a primeira nota do aluno 1: 7\n","Digite a segunda nota do aluno 1: 9\n","A média do aluno é 1 é 8.0.\n","Digite a primeira nota do aluno 2: 7\n","Digite a segunda nota do aluno 2: 9\n","A média do aluno é 2 é 8.0.\n","Digite a primeira nota do aluno 3: 6\n","Digite a segunda nota do aluno 3: 7\n","A média do aluno é 3 é 6.5.\n","Digite a primeira nota do aluno 4: 4\n","Digite a segunda nota do aluno 4: 3\n","A média do aluno é 4 é 3.5.\n","Digite a primeira nota do aluno 5: 7\n","Digite a segunda nota do aluno 5: 3\n","A média do aluno é 5 é 5.0.\n","Digite a primeira nota do aluno 6: 3\n","Digite a segunda nota do aluno 6: 6\n","A média do aluno é 6 é 4.5.\n","Digite a primeira nota do aluno 7: 8\n","Digite a segunda nota do aluno 7: 6\n","A média do aluno é 7 é 7.0.\n","Digite a primeira nota do aluno 8: 2\n","Digite a segunda nota do aluno 8: 5\n","A média do aluno é 8 é 3.5.\n","Digite a primeira nota do aluno 9: 1\n","Digite a segunda nota do aluno 9: 3\n","A média do aluno é 9 é 2.0.\n","Digite a primeira nota do aluno 10: 6\n","Digite a segunda nota do aluno 10: 8\n","A média do aluno é 10 é 7.0.\n"]}]},{"cell_type":"code","source":["contador = 1\n","mediaDaSala = 0\n","while contador <= 10:\n","  nota1= float(input(\"Digite a primeira nota do aluno %d: \" % contador))\n","  nota2= float(input(\"Digite a segunda nota do aluno %d: \" % contador))\n","  media = (nota1 + nota2) / 2\n","  mediaDaSala += media\n","  print(\"A média do aluno é %d é %.1f.\" % (contador, media))\n","  contador += 1\n","mediaDaSala /= contador - 1\n","print(\"A média da sala é %.1f.\" % mediaDaSala)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"3-naLxDoKL75","executionInfo":{"status":"ok","timestamp":1712839358932,"user_tz":180,"elapsed":57946,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"091a32ec-e87d-4d8a-b27e-959133f3a997"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite a primeira nota do aluno 1: 6\n","Digite a segunda nota do aluno 1: 8\n","A média do aluno é 1 é 7.0.\n","Digite a primeira nota do aluno 2: 6\n","Digite a segunda nota do aluno 2: 3\n","A média do aluno é 2 é 4.5.\n","Digite a primeira nota do aluno 3: 8\n","Digite a segunda nota do aluno 3: 0\n","A média do aluno é 3 é 4.0.\n","Digite a primeira nota do aluno 4: 1\n","Digite a segunda nota do aluno 4: 2\n","A média do aluno é 4 é 1.5.\n","Digite a primeira nota do aluno 5: 3\n","Digite a segunda nota do aluno 5: 2\n","A média do aluno é 5 é 2.5.\n","Digite a primeira nota do aluno 6: 3\n","Digite a segunda nota do aluno 6: 2\n","A média do aluno é 6 é 2.5.\n","Digite a primeira nota do aluno 7: 1\n","Digite a segunda nota do aluno 7: 1\n","A média do aluno é 7 é 1.0.\n","Digite a primeira nota do aluno 8: 9\n","Digite a segunda nota do aluno 8: 7\n","A média do aluno é 8 é 8.0.\n","Digite a primeira nota do aluno 9: 6\n","Digite a segunda nota do aluno 9: 0\n","A média do aluno é 9 é 3.0.\n","Digite a primeira nota do aluno 10: 4\n","Digite a segunda nota do aluno 10: 3\n","A média do aluno é 10 é 3.5.\n","A média da sala é 3.8.\n"]}]},{"cell_type":"markdown","source":["Exemplo 5-"],"metadata":{"id":"TJOpZlOGQY4Y"}},{"cell_type":"code","source":["contador = 0\n","soma = 0\n","resp = \"s\"\n","while resp ==\"s\" or resp ==\"S\":\n","  numero = float(input(\"Digite um número: \"))\n","  soma += numero\n","  contador += 1\n","  resp = input(\"Deseja continuar (S/N)? \")\n","media = soma / contador\n","print(\"A média dos números digitados é %f.\" % media)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"RIBaMam4QX9h","executionInfo":{"status":"ok","timestamp":1712842572282,"user_tz":180,"elapsed":22011,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"f7d87b81-59f1-43f4-c681-0c136aab15ff"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número: 6\n","Deseja continuar (S/N)? s\n","Digite um número: 6\n","Deseja continuar (S/N)? s\n","Digite um número: 4\n","Deseja continuar (S/N)? n\n","A média dos números digitados é 5.333333.\n"]}]},{"cell_type":"code","source":["#Exemplo prof\n","contador = 0\n","soma = 0\n","numero = 0\n","while numero != -1:\n","  numero = float(input(\"Digite um número: (-1 para terminar) \"))\n","  if numero != -1:\n","    soma += numero\n","    contador += 1\n","media = soma / contador\n","print(\"A média dos números digitados é %f. \" % media)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"D1mt72T1YBhl","executionInfo":{"status":"ok","timestamp":1712842875970,"user_tz":180,"elapsed":10907,"user":{"displayName":"Beatriz Veloso","userId":"00069084993732064588"}},"outputId":"9abe4fcd-ad35-4a6a-9136-747041e401dc"},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Digite um número: (-1 para terminar) 7\n","Digite um número: (-1 para terminar) 5\n","Digite um número: (-1 para terminar) 5\n","Digite um número: (-1 para terminar) -1\n","A média dos números digitados é 5.666667. \n"]}]}]}
+# Faça um programa em Python que solicite um número binário, faça a conversão e exiba o número digitado na base decimal
+
+binario = input("Digite um número binário: ")
+potencia = len(binario) - 1
+decimal = 0
+for digito in binario:
+  decimal = decimal + int(digito) * 2 ** potencia
+  potencia = potencia - 1
+print("A conversão do binário %s para decimal e %d." % (binario, decimal))
+
+# Faça um algoritmo que calcula e mostra a média entre duas notas de 10 alunos
+
+contador = 1
+while contador <= 10:
+  nota1= float(input("Digite a primeira nota do aluno %d: " % contador))
+  nota2= float(input("Digite a segunda nota do aluno %d: " % contador))
+  media = (nota1 + nota2) / 2
+  print("A média do aluno é %d é %.1f." % (contador, media))
+  contador += 1
+
+
+contador = 1
+mediaDaSala = 0
+while contador <= 10:
+  nota1= float(input("Digite a primeira nota do aluno %d: " % contador))
+  nota2= float(input("Digite a segunda nota do aluno %d: " % contador))
+  media = (nota1 + nota2) / 2
+  mediaDaSala += media
+  print("A média do aluno é %d é %.1f." % (contador, media))
+  contador += 1
+mediaDaSala /= contador - 1
+print("A média da sala é %.1f." % mediaDaSala)
+
+
+contador = 0
+soma = 0
+resp = "s"
+while resp =="s" or resp =="S":
+  numero = float(input("Digite um número: "))
+  soma += numero
+  contador += 1
+  resp = input("Deseja continuar (S/N)? ")
+media = soma / contador
+print("A média dos números digitados é %f." % media)
+
+
+#Exemplo prof
+contador = 0
+soma = 0
+numero = 0
+while numero != -1:
+  numero = float(input("Digite um número: (-1 para terminar) "))
+  if numero != -1:
+    soma += numero
+    contador += 1
+media = soma / contador
+print("A média dos números digitados é %f. " % media)
